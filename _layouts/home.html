@@ -8,18 +8,6 @@
       {{ content }}
     </div>
 
-    {% if site.education %}
-      <div class="my-6">
-        {% include education.html %}
-      </div>
-    {% endif %}
-
-    {% if site.experiences %}
-      <div class="my-6">
-        {% include experiences.html %}
-      </div>
-    {% endif %}
-
     <div class="my-6">
       {% include projects.html %}
     </div>
@@ -49,14 +37,6 @@
             {{ content }}
           </div>
         {% endunless %}
-
-        {% if site.education %}
-          {% include education.html %}
-        {% endif %}
-
-        {% if site.experiences %}
-          {% include experiences.html %}
-        {% endif %}
 
         {% include projects.html %}
 
