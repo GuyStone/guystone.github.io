@@ -1,0 +1,12 @@
+current directory: /Users/kcl2/github/personal-website/vendor/bundle/ruby/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20190509-53846-lg9kce.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kcl2/github/personal-website/vendor/bundle/ruby/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" clean
+
+current directory: /Users/kcl2/github/personal-website/vendor/bundle/ruby/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR="
+make: *** No rule to make target `/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0/universal-darwin18/ruby/config.h', needed by `arena.o'.  Stop.
+
+make failed, exit code 2

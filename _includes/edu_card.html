@@ -1,0 +1,28 @@
+<!-- PLACE IN SIDE BAR.. OTHER PLACE MAIN CONTENT -->
+{% if site.education_settings.masthead %}
+
+{% else %}
+<div class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3 m-3">
+  <div class="item">
+
+      <div class="meta">
+
+        <div class="upper-row">
+          <h3 class="job-title">{{ education.degree }}</h3>
+          <div class="time">{{ education.time }}</div>
+        </div><!--//upper-row-->
+
+        <div class="company">{{ education.university }}</div>
+
+      </div><!--//meta-->
+
+      {% if education.details %}
+       {% if site.education_settings.exclude.details == false %}
+          <div class="details">
+            {{ education.details | markdownify }}
+          </div><!--//details-->
+        {% endif %}
+      {% endif %}
+
+    </div><!--//item-->
+{% endif %}
