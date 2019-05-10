@@ -1,0 +1,27 @@
+{% if site.experience_settings.masthead %}
+
+{% else %}
+<div class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3 m-3">
+  <div class="item">
+
+      <div class="meta">
+
+        <div class="upper-row">
+          <h3 class="job-title">{{ experience.role }}</h3>
+          <div class="time">{{ experience.time }}</div>
+        </div><!--//upper-row-->
+
+        <div class="company">{{ experience.company }}</div>
+
+      </div><!--//meta-->
+
+      {% if experience.details %}
+      {% if site.experience_settings.exclude.details == false %}
+      <div class="details">
+        {{ experience.details | markdownify }}
+      </div><!--//details-->
+      {% endif %}
+      {% endif %}
+
+    </div><!--//item-->
+{% endif %}

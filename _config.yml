@@ -23,7 +23,7 @@ projects:
   #   - stars
   limit: 9
   exclude:
-    forks: true
+    forks: false
     projects:
     # - repo-name
 
@@ -36,7 +36,7 @@ social_media:
 #   keybase: your_username
   linkedin: guystone
   # medium: your_username
-#   stackoverflow: your_user_id
+  stackoverflow: 11003094
 #   telegram: your_username
   twitter: guy_stone
 #   unsplash: your_username
@@ -45,12 +45,49 @@ social_media:
 #   youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Java
+    web_url: https://github.com/topics/java
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png
 
-  - name: Web design
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Swift
+    web_url: https://github.com/topics/swift
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png
+
+education_settings:
+  limit: 2
+  masthead: false
+  exclude:
+    details: false
+    # TODO: fix size of div when details are excluded
+
+education:
+    - degree: BSc in Computer Science
+      university: King's Colege London
+      time: 2016 - 2019
+      details: |
+        1st Year Modules: Programming Practice and Applications, Data Structures, Database Systems, Computer Systems, Introduction to Artificial Intelligence, Foundations of Computing, Elementary Logic with Applications.
+
+        2st Year Modules: Software Engineering Group Project, Practical Experiences of Programming, Object-Oriented Specification and Design, Internet Systems, Foundations of Computing 2, Operating Systems and Concurrency, Programming Language Design Paradigms.
+
+
+experience_settings:
+  limit: 2
+  masthead: false
+  exclude:
+    details: false
+    # TODO: fix size of div when details are excluded
+
+experiences:
+    - role: Software Engineer Intern
+      time: June 2017 - September 2017
+      company: Zalando SE, Berlin
+      details: |
+        Completed a three-month internship with Zalando where I worked
+        as a Software Development Engineer Intern, this allowed for a first-hand
+        experience in a professional environment, under agile methodologies.
+        These three months involved me designing and building a scalable media
+        management REST microservice. Working with Scala, AWS, REST, AKKA Http, Swagger.

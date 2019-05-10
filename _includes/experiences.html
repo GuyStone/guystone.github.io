@@ -1,0 +1,15 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Experience</h2>
+<p class="f4 mb-2 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}"></p>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+
+      <div class="d-flex flex-wrap gutter-condensed mb-0">
+      <section class="section experiences-section">
+        {% for experience in site.experiences | limit: site.experience_settings.limit %}
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+            {% include exp_card.html %}
+          </div>
+        {% endfor %}
+        </section>
+      </div>
+
+</div>

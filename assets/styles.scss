@@ -41,3 +41,27 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+
+
+
+.upper-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.job-title, .degree {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.time {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.company, .university {
+    margin-bottom: 10px;
+}
