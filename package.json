@@ -1,0 +1,16 @@
+{
+  "name": "guystone-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal blog. Each post is a Markdown file under posts/.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node build.js && npx --yes serve site -p 4000",
+    "watch": "node build.js --watch"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2"
+  }
+}

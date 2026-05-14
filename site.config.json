@@ -1,0 +1,6 @@
+{
+  "siteName": "Guy Stone",
+  "siteSubtitle": "blog",
+  "profileImage": null,
+  "profileText": "Hi, I'm Guy. This is where I write down what I'm thinking about.<br><br>Each post here is a Markdown file in <code>posts/</code> — write one, run <code>npm run build</code>, and it shows up in the index below.<br><br><br>"
+}

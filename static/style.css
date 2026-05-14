@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NIXGONM-Vb', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: #413E3E;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    text-align: right;
+}
+
+div.heading {
+    font-weight: bold;
+    margin-top: 4ch;
+}
+
+div.profile-text {
+    color: #000000;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2.0;
+}
+
+main {
+    padding: 0 50px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 1000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.about-me-link {
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
+
+.about-me-link::after {
+    bottom: 2px;
+}
+
+.profile-image {
+    float: right;
+    margin-left: 90px;
+    width: 200px;
+    height: auto;
+}
+
+.post {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.post-title {
+    color: #413E3E;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.post-title a:link, .post-title a:visited {
+    text-decoration: underline;
+    text-decoration-color: #ff6800;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
+}
+
+.post-title a::after {
+    display: none;
+}
+
+.post-description {
+    font-size: 16px;
+}
+
+.post-image {
+    margin-left: 20px;
+    width: auto;
+    height: 200px;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    background-color: #ff6800;
+}
+
+.date {
+    top: 110px;
+    font-size: 15px;
+    color: #888;
+    font-style: italic;
+}
+
+.bold-light       { font-weight: 300; }
+.bold-regular     { font-weight: 400; }
+.bold-medium      { font-weight: 500; }
+.bold-semi-bold   { font-weight: 600; }
+.bold-bold        { font-weight: 700; }
+.bold-extra-bold  { font-weight: 1000; }
+
+::selection {
+    background-color: #fff2cf;
+    color: #000000;
+}
+
+.math-indent {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+code, pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+code:not([class*="language-"]) {
+    background-color: #fff2cf;
+    color: #000000;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ff6800;
+}
+
+pre {
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #000;
+}
+
+blockquote {
+    border-left: 3px solid #ff6800;
+    margin: 1em 0;
+    padding: 0.2em 1em;
+    color: #555;
+    background: #fffaf3;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+article.post-body p {
+    font-size: 17px;
+}
+
+article.post-body ul,
+article.post-body ol {
+    list-style: revert;
+    padding-left: 1.5em;
+}
+
+article.post-body ul li,
+article.post-body ol li {
+    margin-bottom: 6px;
+}
+
+article.post-body h2,
+article.post-body h3 {
+    margin-top: 1.6em;
+}
+
+mark {
+    background: #fff2cf;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+.responsive-image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .responsive-image {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .about-me-link {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .profile-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 250px !important;
+        height: 250px !important;
+        max-width: none;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    div.profile-text {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .post {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .post > div:first-child {
+        width: 100%;
+    }
+
+    .post-title {
+        font-size: 1.15rem;
+    }
+
+    .post-description {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .post-image {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header h2 {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .post-title {
+        font-size: 1.05rem;
+    }
+
+    .post-description {
+        font-size: 14px;
+    }
+
+    div.profile-text {
+        font-size: 15px;
+    }
+}
