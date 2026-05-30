@@ -79,13 +79,18 @@ li {
 .profile-image {
     float: right;
     margin-left: 90px;
-    width: 300px;
+    width: 240px;
     height: auto;
 }
 
 .post {
     margin-bottom: 20px;
     display: flex;
+    clear: both;
+}
+
+main > .post:first-of-type {
+    margin-top: 60px;
 }
 
 .post-title {
@@ -277,8 +282,8 @@ mark {
         float: none;
         display: block;
         margin: 0 auto 20px auto;
-        width: 320px !important;
-        height: 320px !important;
+        width: 260px !important;
+        height: 260px !important;
         max-width: none;
         object-fit: cover;
         border-radius: 0;
