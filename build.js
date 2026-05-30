@@ -116,6 +116,15 @@ function readPages() {
     });
 }
 
+function renderSiteHeader() {
+  return render(tmpl('index-header.html'), {
+    siteName: escapeHtml(CONFIG.siteName),
+    siteSubtitle: CONFIG.siteSubtitle
+      ? `\n        <h2>${escapeHtml(CONFIG.siteSubtitle)}</h2>`
+      : '',
+  });
+}
+
 function buildIndex(posts) {
   const cardTmpl = tmpl('post-card.html');
   const cards = posts
@@ -140,15 +149,11 @@ function buildIndex(posts) {
     : '';
 
   const main = [profileImg, profileText, cards].filter(Boolean).join('\n');
-  const headerContent = render(tmpl('index-header.html'), {
-    siteName: escapeHtml(CONFIG.siteName),
-    siteSubtitle: escapeHtml(CONFIG.siteSubtitle),
-  });
 
   return render(tmpl('base.html'), {
     title: escapeHtml(CONFIG.siteName),
     cssPath: 'static/style.css',
-    headerContent,
+    headerContent: renderSiteHeader(),
     homeHref: 'index.html',
     aboutHref: 'about.html',
     mainContent: main,
@@ -173,14 +178,10 @@ function buildPost(post) {
 
 function buildPage(page) {
   const html = marked.parse(page.content);
-  const headerContent = render(tmpl('index-header.html'), {
-    siteName: escapeHtml(CONFIG.siteName),
-    siteSubtitle: escapeHtml(CONFIG.siteSubtitle),
-  });
   return render(tmpl('base.html'), {
     title: `${CONFIG.siteName} — ${page.title}`,
     cssPath: 'static/style.css',
-    headerContent,
+    headerContent: renderSiteHeader(),
     homeHref: 'index.html',
     aboutHref: 'about.html',
     mainContent: `        <article class="post-body">\n${html}\n        </article>`,
