@@ -1,5 +1,5 @@
 {
-  "name": "guystone-blog",
+  "name": "guystone.github.io",
   "version": "1.0.0",
   "private": true,
   "description": "Personal blog. Each post is a Markdown file under posts/.",

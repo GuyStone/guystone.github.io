@@ -1,6 +1,10 @@
-# guystone-blog
+# guystone.github.io
 
 Personal blog. Each post is a Markdown file in `posts/`.
+
+The repo is named `guystone.github.io` so that if GitHub Pages is enabled
+(requires Pro for private repos) the site is served at
+<https://guystone.github.io/> with no subpath.
 
 ## Quick start
 
