@@ -86,10 +86,10 @@ li {
 .post {
     margin-bottom: 20px;
     display: flex;
-    clear: both;
 }
 
-main > .post:first-of-type {
+.post-list {
+    clear: both;
     margin-top: 110px;
 }
 

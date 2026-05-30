@@ -148,7 +148,10 @@ function buildIndex(posts) {
     ? `        <div class="profile-text">${CONFIG.profileText}</div>`
     : '';
 
-  const main = [profileImg, profileText, cards].filter(Boolean).join('\n');
+  const postList = cards
+    ? `        <section class="post-list">\n${cards}\n        </section>`
+    : '';
+  const main = [profileImg, profileText, postList].filter(Boolean).join('\n');
 
   return render(tmpl('base.html'), {
     title: escapeHtml(CONFIG.siteName),
