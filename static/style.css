@@ -33,15 +33,15 @@ div.heading {
 div.profile-text {
     color: #000000;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 19px;
     text-align: justify;
     line-height: 2.0;
 }
 
 main {
-    padding: 0 60px;
+    padding: 0 50px;
     text-align: left;
-    max-width: 1200px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ li {
 
 .post-title {
     color: #413E3E;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -106,8 +106,8 @@ li {
 }
 
 .post-description {
-    font-size: 19px;
-    line-height: 1.65;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 .post-image {
@@ -134,7 +134,7 @@ a::after {
 
 .date {
     top: 110px;
-    font-size: 17px;
+    font-size: 16px;
     color: #888;
     font-style: italic;
 }
@@ -201,12 +201,12 @@ main img {
 }
 
 article.post-body {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.65;
 }
 
 article.post-body p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 article.post-body ul,
@@ -302,12 +302,12 @@ mark {
     }
 
     .post-title {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
     }
 
     .post-description {
-        font-size: 17px;
-        line-height: 1.55;
+        font-size: 15px;
+        line-height: 1.5;
     }
 
     .post-image {
@@ -338,14 +338,14 @@ mark {
     }
 
     .post-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .post-description {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     div.profile-text {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
