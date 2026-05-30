@@ -79,7 +79,7 @@ li {
 .profile-image {
     float: right;
     margin-left: 90px;
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -277,8 +277,8 @@ mark {
         float: none;
         display: block;
         margin: 0 auto 20px auto;
-        width: 250px !important;
-        height: 250px !important;
+        width: 320px !important;
+        height: 320px !important;
         max-width: none;
         object-fit: cover;
         border-radius: 0;
