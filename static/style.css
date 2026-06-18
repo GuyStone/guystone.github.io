@@ -230,6 +230,16 @@ article.post-body h3 {
     margin-top: 1.6em;
 }
 
+.page-likes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.page-likes li {
+    margin-bottom: 18px;
+    line-height: 1.55;
+}
+
 mark {
     background: #fff2cf;
     padding: 1px 3px;

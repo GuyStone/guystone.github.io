@@ -159,6 +159,7 @@ function buildIndex(posts) {
     headerContent: renderSiteHeader(),
     homeHref: 'index.html',
     aboutHref: 'about.html',
+    likesHref: 'likes.html',
     mainContent: main,
   });
 }
@@ -175,6 +176,7 @@ function buildPost(post) {
     headerContent,
     homeHref: '../index.html',
     aboutHref: '../about.html',
+    likesHref: '../likes.html',
     mainContent: `        <article class="post-body">\n${html}\n        </article>`,
   });
 }
@@ -187,7 +189,8 @@ function buildPage(page) {
     headerContent: renderSiteHeader(),
     homeHref: 'index.html',
     aboutHref: 'about.html',
-    mainContent: `        <article class="post-body">\n${html}\n        </article>`,
+    likesHref: 'likes.html',
+    mainContent: `        <article class="post-body page-${page.slug}">\n${html}\n        </article>`,
   });
 }
 
