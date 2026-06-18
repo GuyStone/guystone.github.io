@@ -11,3 +11,4 @@ A short bio goes here. Edit `pages/about.md` to change this page.
 
 - GitHub: [@GuyStone](https://github.com/GuyStone)
 - LinkedIn: [guystone](https://www.linkedin.com/in/guystone)
+- Twitter: [@Guy_Stone](https://x.com/Guy_Stone)
